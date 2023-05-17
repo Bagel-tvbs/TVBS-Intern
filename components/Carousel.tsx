@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-
+import Link from "next/link";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 export default function Carousel({ images }) {

@@ -1,5 +1,5 @@
+import Link from "next/link";
 export default function Footer() {
-  
   return (
     <footer className="pb-4">
       <div className="max-w-6xl xl:max-w-6xl mx-auto divide-y divide-gray-200 px-4 sm:px-6 md:px-8">

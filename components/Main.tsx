@@ -1,4 +1,5 @@
 import Carousel from "./Carousel";
+import Link from "next/link";
 export default function Main() {
   const images = [
     "/images/7-9.webp",
