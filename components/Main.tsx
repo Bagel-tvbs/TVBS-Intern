@@ -1,5 +1,6 @@
 import Carousel from "./Carousel";
 import Link from "next/link";
+import Image from "next/image";
 export default function Main() {
   const images = [
     "/images/7-9.webp",
@@ -33,11 +34,11 @@ export default function Main() {
           </div>
         </div>
         <div className="xl:mr-44 sm:mr-0 sm:mb-28 mb-0 lg:mb-0 mr-48 md:pl-10 bg">
-          <img
+          <Image
             className="w-[700px] md:ml-1 ml-24"
             alt="hug"
             src="/images/3d-casual-life-young-boys-and-young-girl-jumping.png"
-          ></img>
+          ></Image>
         </div>
       </div>
 
@@ -46,11 +47,11 @@ export default function Main() {
       </section>
       <section className="mx-auto flex ">
         <div className="container px-5 mx-auto lg:px-24  ">
-          <img
+          <Image
             className="w-90 md:ml-1 ml-24"
             alt="hug"
             src="/images/business-3d-joyful-young-black-man-jumping.png"
-          ></img>
+          ></Image>
         </div>
         <div className="flex flex-col w-full  lg:text-center  mt-[200px]">
           <h1 className="mb-8 text-8xl Avenir font-semibold  bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-blue-900 hover:from-red-800 hover:to-green-700 hover:ease-in duration-300  ">
@@ -101,7 +102,7 @@ export default function Main() {
                 </Link>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/3d-business-guy-working-on-a-computer-and-shopping-online-1.png"
                   alt=""
                   className="ml-[150px]"

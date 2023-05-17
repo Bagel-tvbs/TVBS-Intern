@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import Link from "next/link";
+import Image from "next/image";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 export default function Carousel({ images }) {
@@ -30,7 +31,7 @@ export default function Carousel({ images }) {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img
+          <Image
             src={image}
             alt={`Slide ${index}`}
             className="object-cover w-full h-full"
