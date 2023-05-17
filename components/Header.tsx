@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
@@ -25,14 +26,14 @@ export default function Header() {
     >
       <div className="flex flex-col max-w-6xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between p-4">
-          <a
+          <Link
             href="/"
             className="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
           >
             <h1 className="text-4xl Avenir tracking-tighter text-gray-900 md:text-4x1 lg:text-3xl ">
               TVBS 實習生計畫
             </h1>
-          </a>
+          </Link>
           <button
             className="text-white cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none "
             type="button"
@@ -66,20 +67,20 @@ export default function Header() {
           <nav className="flex-col flex-grow ">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <a
+                <Link
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
                 >
                   加入我們
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="https://digital.tvbs.com.tw/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
                 >
                   關於我們
-                </a>
+                </Link>
               </li>
               <li></li>
             </ul>

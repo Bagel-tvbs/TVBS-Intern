@@ -23,12 +23,12 @@ export default function Main() {
             我們致力於以穩定的開發速率，持續地交付有價值的軟體來滿足客戶需求，並以全局為考量穩定改善團隊及消除多餘的浪費。我們深信最佳的架構與設計來自於能自我組織的團隊，歡迎有相同信念的朋友一起加入！
           </p>
           <div className="flex justify-center hover:scale-105">
-            <a
+            <Link
               className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900 "
               href="https://www.104.com.tw/job/7go5r?jobsource=company_job"
             >
               <span className=" justify-center  text-rose-500">加入我們！</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="xl:mr-44 sm:mr-0 sm:mb-28 mb-0 lg:mb-0 mr-48 md:pl-10 bg">
@@ -92,12 +92,12 @@ export default function Main() {
                   autoComplete="email"
                   className="border border-gray-600  pr-2 pl-2 py-3  w-[300px]  rounded-md text-gray-800 font-semibold hover:border-gray-900"
                 ></input>{" "}
-                <a
+                <Link
                   className="inline-flex items-center px-14 py-3 mt-2 ml-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
                   href="/"
                 >
                   <span className="justify-center text-black">送出</span>
-                </a>
+                </Link>
               </div>
               <div>
                 <img
