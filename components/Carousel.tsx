@@ -16,7 +16,10 @@ import Link from "next/link";
 import Image from "next/image";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-export default function Carousel({ images }) {
+type CarouselProps = {
+  images: string[];
+};
+export default function Carousel({ images }: CarouselProps) {
   return (
     <Swiper
       spaceBetween={100}
@@ -35,6 +38,8 @@ export default function Carousel({ images }) {
             src={image}
             alt={`Slide ${index}`}
             className="object-cover w-full h-full"
+            width={800}
+            height={800}
           />
         </SwiperSlide>
       ))}

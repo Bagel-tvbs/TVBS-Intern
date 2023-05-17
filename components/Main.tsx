@@ -38,6 +38,8 @@ export default function Main() {
             className="w-[700px] md:ml-1 ml-24"
             alt="hug"
             src="/images/3d-casual-life-young-boys-and-young-girl-jumping.png"
+            width={300}
+            height={300}
           ></Image>
         </div>
       </div>
@@ -51,6 +53,8 @@ export default function Main() {
             className="w-90 md:ml-1 ml-24"
             alt="hug"
             src="/images/business-3d-joyful-young-black-man-jumping.png"
+            width={300}
+            height={300}
           ></Image>
         </div>
         <div className="flex flex-col w-full  lg:text-center  mt-[200px]">
@@ -106,6 +110,8 @@ export default function Main() {
                   src="/images/3d-business-guy-working-on-a-computer-and-shopping-online-1.png"
                   alt=""
                   className="ml-[150px]"
+                  width={300}
+                  height={300}
                 />
               </div>
             </div>
