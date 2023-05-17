@@ -1,2 +1,0 @@
-# TVBS-Intern
-TVBS-Intern
