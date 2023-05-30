@@ -88,7 +88,7 @@ export default function Header() {
                 >
                   <Image
                     className=""
-                    alt="hug"
+                    alt="ig"
                     src="/images/instagram-1.png"
                     width={50}
                     height={50}
@@ -102,7 +102,7 @@ export default function Header() {
                 >
                   <Image
                     className=""
-                    alt="hug"
+                    alt="facebook"
                     src="/images/Facebook-1.png"
                     width={50}
                     height={50}
