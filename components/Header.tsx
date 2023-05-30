@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
@@ -68,6 +69,48 @@ export default function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link
+                  href="  https://www.youtube.com/@TVBSNEWS01"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-1 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                >
+                  <Image
+                    className=""
+                    alt="hug"
+                    src="/images/youtube-1.png"
+                    width={50}
+                    height={50}
+                  ></Image>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/tvbslivenews/"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-1 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                >
+                  <Image
+                    className=""
+                    alt="hug"
+                    src="/images/instagram-1.png"
+                    width={50}
+                    height={50}
+                  ></Image>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://zh-tw.facebook.com/tvbsfb/"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-1 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                >
+                  <Image
+                    className=""
+                    alt="hug"
+                    src="/images/Facebook-1.png"
+                    width={50}
+                    height={50}
+                  ></Image>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
                 >
@@ -82,7 +125,6 @@ export default function Header() {
                   關於我們
                 </Link>
               </li>
-              <li></li>
             </ul>
           </nav>
         </div>

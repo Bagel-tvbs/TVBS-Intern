@@ -1,6 +1,7 @@
 import Carousel from "./Carousel";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function Main() {
   const images = [
     "/images/7-9.webp",
@@ -15,7 +16,10 @@ export default function Main() {
       <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-2/3 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
           <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900  ">
-            TVBS 聯立媒體
+            TVBS 聯利媒體
+          </h1>
+          <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900  ">
+            數位開發中心
           </h1>
           <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900  ">
             2023實習生計畫
@@ -37,7 +41,7 @@ export default function Main() {
           <Image
             className="w-[700px] md:ml-1 ml-24"
             alt="hug"
-            src="/images/3d-casual-life-young-boys-and-young-girl-jumping.png"
+            src="/images/DrawKit Vector Illustration Fun & Playful Finn Character (9).png"
             width={300}
             height={300}
           ></Image>
@@ -47,23 +51,55 @@ export default function Main() {
       <section className="flex">
         <Carousel images={images}></Carousel>
       </section>
-      <section className="mx-auto flex ">
-        <div className="container px-5 mx-auto lg:px-24  ">
-          <Image
-            className="w-90 md:ml-1 ml-24"
-            alt="hug"
-            src="/images/business-3d-joyful-young-black-man-jumping.png"
-            width={300}
-            height={300}
-          ></Image>
-        </div>
-        <div className="flex flex-col w-full  lg:text-center  mt-[200px]">
-          <h1 className="mb-8 text-8xl Avenir font-semibold  bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-blue-900 hover:from-red-800 hover:to-green-700 hover:ease-in duration-300  ">
-            多個節目 多個IP 由你探索
-          </h1>
+      <section className="h-[500px] flex justify-center items-center  mt-14 ">
+        <div className="h-[400px]  w-4/5 flex">
+          <div className=" w-1/2">
+            <Image
+              src="/images/DrawKit Vector Illustration Fun & Playful Finn Character (10).png"
+              width={500}
+              height={500}
+              alt="shopping"
+            ></Image>
+          </div>
+
+          <div className="w-1/2">
+            <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
+              下列職缺 供你挑戰
+            </h1>
+            <ul className="bg-teal-100 bg-opacity-70">
+              <a
+                href="https://www.104.com.tw/job/7go5r?jobsource=company_job"
+                className="text-gray-950 text-xl"
+              >
+                軟體測試工程師助理(月薪制工讀生)
+              </a>
+              <li>1. 測試計畫、測試項目與技術文件撰寫</li>
+              <li>
+                2. 各項產品(網站、APP、電商平台等)手動/自動化測試與Bug管理。
+              </li>
+              <li>3. 公文/文件整理、記錄執行狀況，並掌握進度。</li>
+              <li>4. 主管交辦事項。</li>
+              <li>5. 視工作實務執行狀況，有機會培養為全職同仁。</li>
+            </ul>
+            <ul className="mt-8 bg-teal-100 bg-opacity-70">
+              <a
+                href="https://www.104.com.tw/job/7plpy?jobsource=company_job"
+                className="text-gray-950 text-xl"
+              >
+                數據分析實習生Data Analyst Intern(月薪制工讀生)
+              </a>
+              <li>
+                1. 整合如GA3, GA4, AWS RDS, YouTube, FB等異質數據源，並以Data
+                Build Tool (dbt)建立穩定、可靠的數據轉換流。
+              </li>
+              <li>2. 協助營運端以Tableau / Data Studio建立視覺化儀表板。</li>
+              <li>3. 營運指標分析，如訪客瀏覽行為分析、RFM分析等。</li>
+            </ul>
+          </div>
         </div>
       </section>
-      <div className="grr max-w-7xl pt-20 mx-auto text-center">
+
+      <div className="grr max-w-7xl pt-20 mx-auto text-center mt-14">
         <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
           希望透過計畫 協助更多人探索產業跟職涯目標 開拓更好 更遠的願景
         </h1>
@@ -75,7 +111,7 @@ export default function Main() {
             className=" w-3/4 mb-10 g327 border rounded-lg shadow-md "
             width="900"
             height="500"
-            src="https://drive.google.com/file/d/1UVfWrE1HKZ4y-uv-7EBL-hZblbdSysjz/preview"
+            src="/videos/tvbs實習影片.mp4"
           ></iframe>
           {/* className="object-cover object-center w-3/4 mb-10 g327 border rounded-lg shadow-md" */}
         </div>
@@ -83,7 +119,7 @@ export default function Main() {
       <section className="relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="py-24 md:py-36">
-            <h1 className="mb-5 text-6xl Avenir font-semibold text-gray-900">
+            <h1 className=" text-6xl Avenir font-semibold text-gray-900">
               輸入你的電子信箱以得到最新資訊
             </h1>
             <h1 className="mb-9 text-2xl font-semibold text-gray-600">
@@ -96,7 +132,7 @@ export default function Main() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="border border-gray-600  pr-2 pl-2 py-3  w-[300px]  rounded-md text-gray-800 font-semibold hover:border-gray-900"
+                  className="border border-gray-600  pr-2 pl-2 py-3  w-[400px]  rounded-md text-gray-800 font-semibold hover:border-gray-900"
                 ></input>{" "}
                 <Link
                   className="inline-flex items-center px-14 py-3 mt-2 ml-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
@@ -107,17 +143,32 @@ export default function Main() {
               </div>
               <div>
                 <Image
-                  src="/images/3d-business-guy-working-on-a-computer-and-shopping-online-1.png"
+                  src="/images/DrawKit Vector Illustration Fun & Playful Finn Character (5).png"
                   alt=""
-                  className="ml-[150px]"
-                  width={300}
-                  height={300}
+                  className="ml-[50px]"
+                  width={400}
+                  height={400}
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="grr max-w-7xl pt-20 mx-auto text-center mt-14">
+        <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
+          這是你想像的數位開發嗎？
+        </h1>
+
+        <div className="container flex flex-col items-center justify-center mx-auto rounded-lg ">
+          <iframe
+            className=" w-3/4 mb-10 g327 border rounded-lg shadow-md "
+            width="900"
+            height="500"
+            src="/videos/我們以為的數開_Video.mp4"
+          ></iframe>
+          {/* className="object-cover object-center w-3/4 mb-10 g327 border rounded-lg shadow-md" */}
+        </div>
+      </div>
     </section>
   );
 }
