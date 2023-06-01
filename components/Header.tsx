@@ -5,13 +5,17 @@ import Image from "next/image";
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
+  const [textColor, settextColor] = useState("text-black-800");
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       if (scrollY > 100) {
         setBgColor("bg-[#09327c]");
+        settextColor("text-white");
       } else {
         setBgColor("bg-teal-50");
+        settextColor("text-black-800");
       }
     };
 
@@ -31,7 +35,9 @@ export default function Header() {
             href="/"
             className="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
           >
-            <h1 className="text-4xl Avenir tracking-tighter text-gray-900 md:text-4x1 lg:text-3xl ">
+            <h1
+              className={`text-4xl Avenir tracking-tighter  md:text-4x1 lg:text-3xl ${textColor}`}
+            >
               TVBS 實習生計畫
             </h1>
           </Link>
@@ -112,7 +118,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="font-medium text-gray-900 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                  className={`font-medium ${textColor} hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]`}
                 >
                   加入我們
                 </Link>
@@ -120,7 +126,7 @@ export default function Header() {
               <li>
                 <Link
                   href="https://digital.tvbs.com.tw/"
-                  className="font-medium text-gray-900 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                  className={`font-medium ${textColor} hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]`}
                 >
                   關於我們
                 </Link>

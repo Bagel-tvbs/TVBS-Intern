@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Main() {
-  const images = [
+  const Showimages = [
     "/images/7-9.webp",
     "/images/8-9.webp",
     "/images/9-3.webp",
@@ -13,18 +13,19 @@ export default function Main() {
   ];
   return (
     <section className="text-gray-600 body-font">
-      <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="max-w-7xl mx-auto flex px-5 pt-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-2/3 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
           <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-[#09327c] font-mono ">
             2023 TVBS
           </h1>
-          <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-[#09327c]">
-            3T人才培訓計畫
+          <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-[#09327c] font-mono">
+            3T人才實習計畫
           </h1>
-
           <p className="mb-4 xl:w-3/4  text-lg text-[#09327c]">
-            3t人才培訓計畫，為培養具有
-            真實(Truth)、信賴(Trust)、科技(Technology) 科技人
+            3T人才實習計畫，為培養具有 真實
+            <span className="font-extrabold">(Truth)</span>
+            、信賴<span className="font-extrabold">(Trust)</span>、科技
+            <span className="font-extrabold">(Technology)</span> 科技人
             數位開發中心擁有強大的軟體開發團隊
             讓你在有限的時間內，開通各項技術棧。
           </p>
@@ -35,6 +36,22 @@ export default function Main() {
             >
               <span className=" justify-center text-blue-950">加入我們！</span>
             </Link>
+          </div>
+          <div className="flex">
+            <Image
+              src="/images/3T人才培訓計畫_Poster (1).png"
+              alt=""
+              className=""
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/images/3T人才培訓計畫_Poster.png"
+              alt=""
+              className=""
+              width={200}
+              height={200}
+            />
           </div>
         </div>
         <div className="">
@@ -55,16 +72,9 @@ export default function Main() {
           width={600}
           height={600}
         />
-        <Image
-          src="/images/whatyougot.png"
-          alt=""
-          className="ml-[50px]"
-          width={600}
-          height={600}
-        />
       </section>
       <div className="grr max-w-7xl pt-20 mx-auto text-center mt-14">
-        <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
+        <h1 className="mb-8 text-4xl Avenir font-semibold text-[#09327c]">
           這是你想像的數位開發嗎？
         </h1>
 
@@ -79,10 +89,10 @@ export default function Main() {
         </div>
       </div>
       <section className="text-center">
-        <h1 className="mt-8 text-6xl Avenir font-semibold text-gray-900 ">
+        <h1 className="mt-8 text-4xl Avenir font-semibold text-[#09327c] ">
           加入你喜歡的節目吧！
         </h1>
-        <Carousel images={images}></Carousel>
+        <Carousel images={Showimages}></Carousel>
       </section>
       <section className="h-[500px] flex justify-center items-center  mt-14 ">
         <div className="h-[400px]  w-4/5 flex">
@@ -128,10 +138,10 @@ export default function Main() {
       <section className="relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="py-24 md:py-36">
-            <h1 className=" text-6xl Avenir font-semibold text-gray-900">
+            <h1 className=" text-4xl Avenir font-semibold text-[#09327c]">
               輸入你的電子信箱以得到最新資訊
             </h1>
-            <h1 className="mb-9 text-2xl font-semibold text-gray-600">
+            <h1 className="mb-9 text-2xl font-semibold text-[#09327c]">
               我們將會寄送相關資訊給您
             </h1>
             <div className=" flex  items-center">
