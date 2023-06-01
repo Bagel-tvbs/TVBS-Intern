@@ -28,12 +28,12 @@ export default function Main() {
             數位開發中心擁有強大的軟體開發團隊
             讓你在有限的時間內，開通各項技術棧。
           </p>
-          <div className="flex justify-center hover:scale-105 ">
+          <div className="flex justify-center hover:scale-105">
             <Link
-              className=" bg-[#090f7c] inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900 "
+              className=" inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg "
               href="https://www.104.com.tw/job/7go5r?jobsource=company_job"
             >
-              <span className=" justify-center   text-white ">加入我們！</span>
+              <span className=" justify-center text-blue-950">加入我們！</span>
             </Link>
           </div>
         </div>
