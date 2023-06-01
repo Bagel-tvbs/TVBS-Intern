@@ -9,7 +9,7 @@ export default function Header() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       if (scrollY > 100) {
-        setBgColor("bg-teal-100");
+        setBgColor("bg-[#09327c]");
       } else {
         setBgColor("bg-teal-50");
       }
@@ -112,7 +112,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                  className="font-medium text-gray-900 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
                 >
                   加入我們
                 </Link>
@@ -120,7 +120,7 @@ export default function Header() {
               <li>
                 <Link
                   href="https://digital.tvbs.com.tw/"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
+                  className="font-medium text-gray-900 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out hover:text-[17px]"
                 >
                   關於我們
                 </Link>

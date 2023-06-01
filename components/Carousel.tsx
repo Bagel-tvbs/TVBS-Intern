@@ -30,14 +30,14 @@ export default function Carousel({ images }: CarouselProps) {
       autoplay={{ delay: 5000, disableOnInteraction: false }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
-      className="w-full md:w-[800px] h-[1200px] md:h-[800px]"
+      className="w-full md:w-[600px] h-[1000px] md:h-[600px]"
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <Image
             src={image}
             alt={`Slide ${index}`}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full mt-14"
             width={800}
             height={800}
           />
