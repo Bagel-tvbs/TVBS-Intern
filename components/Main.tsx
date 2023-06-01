@@ -66,7 +66,7 @@ export default function Main() {
 
       <section className="h-[500px] flex justify-center items-center  m-14">
         <Image
-          src="/images/plan.png"
+          src="/images/plana.png"
           alt=""
           className="ml-[50px]"
           width={600}
